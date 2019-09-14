@@ -54,6 +54,29 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+			    <groupId>org.mule.tools.maven</groupId>
+			    <artifactId>mule-maven-plugin</artifactId>
+			    <version>2.0</version>
+			    <configuration>
+				<deploymentType>cloudhub</deploymentType>
+				<muleVersion>${mule.version}</muleVersion>
+				<username>test99991111</username>
+				<password>Test99991111</password>
+				      <workerType>Micro</workerType>
+				<redeploy>true</redeploy>
+				<environment>Sandbox</environment>
+			    </configuration>
+			    <executions>
+				<execution>
+				    <id>deploy</id>
+				    <phase>deploy</phase>
+				    <goals>
+					<goal>deploy</goal>
+				    </goals>
+				</execution>
+			    </executions>
+			</plugin>
 		</plugins>
 	</build>
 
