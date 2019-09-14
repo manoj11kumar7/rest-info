@@ -59,9 +59,6 @@
 
 	<!-- Mule Dependencies -->
 	<dependencies>
-		<!-- Xml configuration -->
-		<dependency>
-		<!-- Mule Transports -->
 		<dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-file</artifactId>
